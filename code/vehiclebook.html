@@ -1,0 +1,204 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <!--use for resoponsiveness-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link to css-->
+  <link rel="stylesheet" href="vehiclebook.css">
+  <!--link to js-->
+  <script src="main.js"></script>
+  <title>MetroRide</title>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav>
+    <div class="logo">
+      <img src="homepage-img/logo.png.jpg" alt="img">
+
+      <a href="index.html" class="brand">
+        <h1>Metro<b class="accent">Ride</b></h1>
+      </a>
+    </div>
+    <div class="menu">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="vehicle.html">Vehicle</a>
+      <a href="book.html">Booking</a>
+
+      <a href="about.html">About Us</a>
+
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+    </div>
+
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
+    </div>
+  </nav>
+
+  <div class="booking-container">
+    <div class="book-img">
+      <img src="book_img.png">
+    </div>
+  
+    <form id="bookingForm" onsubmit="submitBooking(event)">
+      <h2>Vehicle Booking Form</h2>
+      <div class="form-section">
+        <label>Full Name:</label>
+        <input type="text" id="fullName" required>
+      </div>
+
+      <div class="form-section">
+        <label>Email:</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-section">
+        <label>Phone Number:</label>
+        <input type="tel" id="phone" required>
+      </div>
+
+      <div class="form-section">
+        <label>Pickup Date:</label>
+        <input type="date" id="pickupDate" required>
+      </div>
+
+      <div class="form-section">
+        <label>Return Date:</label>
+        <input type="date" id="returnDate" required>
+      </div>
+
+      <div class="form-section">
+        <label>
+          <input type="checkbox" id="priceChartToggle" onclick="togglePriceChart()"> Show Price Chart
+        </label>
+      </div>
+
+      <div id="priceSection" class="price-section" style="display: none;">
+        <label for="priceType">Select Price Type:</label>
+        <select id="priceType" onchange="updatePrice()">
+          <option value="day">Per Day</option>
+          <option value="hour">Per Hour</option>
+        </select>
+
+        <div id="priceValue">Price: Rs. 10,000 per day</div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section">
+          <label><input type="radio" name="driver" value="with" required> Driver With Vehicle</label>
+          <label><input type="radio" name="driver" value="without"> Driver Without Vehicle</label>
+        </div>
+      </div>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <script>
+    function togglePriceChart() {
+      const priceSection = document.getElementById('priceSection');
+      const checkbox = document.getElementById('priceChartToggle');
+      priceSection.style.display = checkbox.checked ? 'block' : 'none';
+    }
+
+    function updatePrice() {
+      const type = document.getElementById('priceType').value;
+      const priceValue = document.getElementById('priceValue');
+
+      if (type === 'day') {
+        priceValue.innerText = 'Price: Rs. 10,000 per day';
+      } else if (type === 'hour') {
+        priceValue.innerText = 'Price: Rs. 2,000 per hour';
+      }
+    }
+
+    function submitBooking(e) {
+      e.preventDefault();
+      
+      // Validate form fields
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const pickupDate = document.getElementById('pickupDate').value;
+      const returnDate = document.getElementById('returnDate').value;
+      const driverOption = document.querySelector('input[name="driver"]:checked');
+
+      if (!fullName || !email || !phone || !pickupDate || !returnDate || !driverOption) {
+        alert("Please fill in all required fields!");
+        return;
+      }
+
+      // Check if pickup date is not in the past
+      const today = new Date().toISOString().split('T')[0];
+      if (pickupDate < today) {
+        alert("Pickup date cannot be in the past!");
+        return;
+      }
+
+      // Check if return date is after pickup date
+      if (returnDate <= pickupDate) {
+        alert("Return date must be after pickup date!");
+        return;
+      }
+
+      // If all validations pass, redirect to payment page
+      alert("Form validated successfully! Redirecting to payment...");
+      window.location.href = "payement.html";
+    }
+  </script>
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="callout">
+      <h2>Let's drive with Metro<b class="black">Ride</b> Today!</h2>
+      <p class="callout-description">
+        Need assistance or ready to reserve your wheels? Contact us now for
+        prompt service and effortless booking!
+      </p>
+      <div class="callout-buttons">
+        <button class="btn-2 btn-callout" onclick="window.location.href='vehicle.html'">
+          <p>Check Our cars</p>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+
+        <button class="btn-2 btn-callout btn-callout-black" onclick="window.location.href='book.html'">
+          <p>Book Now</p>
+          <i class="fa-solid fa-phone"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="" class="footer-brand">Metro<b class="accent">Ride</b></a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="vehicle.html">Vehicle</a>
+        <a href="book.html">Booking</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+      </div>
+      <div class="footer-contact">
+        <p>Email: support@metroride.com</p>
+        <p>Phone: +94 77 123 4567</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#"><img src="homepage-img/footer-social.webp" alt="Facebook"></a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2025 MetroRide. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!--footer end-->
+
+</body>
+
+</html>

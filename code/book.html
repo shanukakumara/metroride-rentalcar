@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <!--use for resoponsiveness-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link to css-->
+  <link rel="stylesheet" href="book.css">
+  <!--link to js-->
+  <script src="main.js"></script>
+  <title>MetroRide</title>
+
+</head>
+
+<body>
+  <!--navbar-->
+  <nav>
+    <div class="logo">
+      <img src="homepage-img/logo.png.jpg" alt="img">
+
+      <a href="index.html" class="brand">
+        <h1>Metro<b class="accent">Ride</b></h1>
+      </a>
+    </div>
+    <div class="menu">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="vehicle.html">Vehicle</a>
+      <a href="book.html">Booking</a>
+
+      <a href="about.html">About Us</a>
+
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+    </div>
+
+
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
+    </div>
+  </nav>
+
+
+
+  <div class="booking-container">
+    <div class="book-img">
+      <img src="book_img.png">
+    </div>
+    <div class="booking-form">
+
+
+        <h2>Book Your Vehicle</h2>
+        <form onsubmit="return confirmBooking(event)">
+
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" >
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" >
+
+          <div class="collection">
+            <div class="date">
+              <label for="pickupDate">Pickup Date:</label>
+              <input type="date" id="pickupDate" name="pickupDate">
+
+              <label for="returnDate">Return Date:</label>
+              <input type="date" id="returnDate" name="returnDate" >
+            </div>
+          </div>
+          <button type="submit">Book Now 📞</button>
+        </form>
+      </div>
+
+  </div>
+
+
+
+
+  <!--footer-->
+
+  <footer class="footer">
+
+    <div class="callout">
+
+      <h2>Let's drive with Metro<b class="black">Ride</b> Today!</h2>
+      <p class="callout-description">
+        Need assistance or redy to reserve your wheels? Contect us now for
+        prompt service and effortless booking!
+      </p>
+      <div class="callout-buttons">
+        <button class="btn-2 btn-callout" onclick="window.location.href='vehicle.html'">
+          <p>Check Our cars</p>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+
+        <button class="btn-2 btn-callout btn-callout-black" onclick="window.location.href='book.html'">
+          <p>Book Now</p>
+          <i class="fa-solid fa-phone"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+
+      <a href="" class="footer-brand">Metro<b class="accent">Ride</b></a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="vehicle.html">Vehicle</a>
+        <a href="book.html">Booking</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+      </div>
+      <div class="footer-contact">
+        <p>Email: support@metroride.com</p>
+        <p>Phone: +94 77 123 4567</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#"><img src="homepage-img/footer-social.webp" alt="Facebook"></a>
+
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2025 MetroRide. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!--footer end-->
+</body>
+
+</html>

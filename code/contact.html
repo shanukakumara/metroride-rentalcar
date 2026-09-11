@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!----------------------------------------------------------------------------------------------------------------------------->
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <!--use for resoponsiveness-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link to css-->
+        <link rel="stylesheet" href="contact.css">
+        <!--link to js-->
+        <script src="main.js"></script>
+        <title>MetroRide</title>
+    </head>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <body>
+        <!--navbar-->
+        <nav>
+            <div class="logo">
+                <img src="homepage-img/logo.png.jpg" alt="img">
+            </div>
+            <a href="index.html" class="brand">
+            
+                <h1>Metro<b class="accent">Ride</b></h1>
+              
+            
+            </a>
+            
+            <div class="menu">
+                <div class="btn">
+                    <i class="fas fa-times close-btn"></i>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="vehicle.html">Vehicle</a>
+                <a href="book.html">Booking</a>
+                <a href="about.html">About Us</a>
+            
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Login</a>
+            
+            </div>
+            <div class="btn">
+                <i class="fas fa-bars menu-btn"></i>
+            </div>
+        </nav>
+
+        <section class="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        
+        <p>Need a ride? MetroRide is just a message away.<br> Let’s get you moving!</p>
+    </div>
+
+    <div class="container">
+        <div class="contactinfo">
+            <div class="box">
+                <span class="icon">
+                            <ion-icon name="location"></ion-icon>
+                        </span>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>No 25,<br>Kandy</p>
+                </div>
+            </div>
+            <br>
+            <div class="box">
+            
+                <span class="icon">
+                    
+                            <ion-icon name="call"></ion-icon>
+                            
+                        </span>
+                        
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+94 77 123 4567</p>
+                </div>
+            </div>
+            <br>
+            <div class="box">
+                <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>support@metroride.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="#" method="post">
+                <h2>Send Message</h2>
+                <div class="input-box">
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <textarea name="message" placeholder="Type your Message..." required></textarea>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+            <script>
+                document.querySelector(".contact-form form").addEventListener("submit", function (e) {
+                  e.preventDefault();
+                  alert("Message Send Successfully");
+                  this.reset();
+                });
+            </script>
+        </div>
+    </div>
+</section>
+
+
+        
+
+
+
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+            </script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </div>
+        <!--footer-->
+        
+        <footer class="footer">
+
+            <div class="callout">
+                
+                <h2>Let's drive with Metro<b class="black">Ride</b> Today!</h2>
+                <p class="callout-description">
+                    Need assistance or redy to reserve your wheels? Contect us now for 
+                    prompt service and effortless booking!
+                </p>
+                <div class="callout-buttons">
+                    <button class="btn-2 btn-callout" onclick="window.location.href='vehicle.html'">
+                        <p>Check Our cars</p>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+
+                    <button class="btn-2 btn-callout btn-callout-black" onclick="window.location.href='book.html'">
+                        <p>Book Now</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                
+                <a href="" class="footer-brand">Metro<b class="accent">Ride</b></a>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="vehicle.html">Vehicle</a>
+                    
+                <a href="book.html">Booking</a>
+            
+                <a href="about.html">About Us</a>
+            
+                    <a href="contact.html">Contact Us</a>
+                    <a href="login.html">Login/Sign Up</a>
+                  </div>
+                <div class="footer-contact">
+                    <p>Email: support@metroride.com</p>
+                    <p>Phone: +94 77 123 4567</p>
+                  </div>
+              
+                  <div class="footer-socials">
+                    <a href="#"><img src="homepage-img/footer-social.webp" alt="Facebook"></a>
+
+                  </div>
+                <div class="footer-copy">
+                    <p>&copy; 2025 MetroRide. All rights reserved.</p>
+                  </div>
+            </div>
+        </footer>
+        <!--footer end-->
+
+
+
+    </body>
+</html>

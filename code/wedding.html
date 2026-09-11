@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetroRide - Wedding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!--link to css-->
+        <link rel="stylesheet" href="vehicle.css">
+        <!--link to js-->
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <!--navbar-->
+        <nav>
+            <div class="logo">
+                <img src="homepage-img/logo.png.jpg" alt="img">
+            </div>
+            <a href="index.html" class="brand">
+            
+                <h1>Metro<b class="accent">Ride</b></h1>
+              
+            
+            </a>
+            
+            <div class="menu">
+                <div class="btn">
+                    <i class="fas fa-times close-btn"></i>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="vehicle.html">Vehicle</a>
+                <a href="book.html">Booking</a>
+                
+                <a href="about.html">About Us</a>
+            
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Login/Sign Up</a>
+            
+            </div>
+            
+        </nav>
+
+
+
+
+
+        <!--wedding-->
+
+        <section class="wedding" id="wedding">
+            
+            <h1>Wedding Collection</h1>
+            <div class="collection-container">
+                <!--car 9-->
+                <!-- Civic -->
+                <div class="collection-car-item">
+                    <img src="vehiclepage-img/wedding/wedding-1.jpg" alt="img">
+                    <div class="car-info-container">
+                        
+                        <h2>Toyota Prius</h2>
+                        <button class="btn-2 btn-car" onclick="openModal('modal-9')">
+                            <p>More</p>
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Transparent Sub Page (Modal) -->
+                <div class="modal" id="modal-9">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-9')">&times;</span>
+                        <h2 class="modal-heading">Toyota Prius</h2>
+                        <div class="image-container">
+                            <img src="vehiclepage-img/wedding/wedding-1.jpg" alt="img">
+                            <br>
+                        </div>
+                        <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                        <div class="modal-points">
+                            <div class="modal-column-1">
+                            <p><strong>Location:</strong>   All island</p><br>
+                            <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                            <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                            <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                            <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                            <p><strong>Driver Option :</strong> With or without driver</p><br>
+                            </div>
+                            <div class="modal-column-2">
+                            <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                            
+                            <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                            <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                            <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                            <br>
+                            <div class="message">
+                                <p>Select a date to check availability.</p>
+                                <label for="pickupDate">Pickup Date:</label>
+                                <input type="date" id="pickupDate" name="pickupDate">
+                                <button class="btn-search" onclick="checkAvailability(this)">Check Now
+                                    <span>🔎</span></button>
+                                <p id="availabilityMessage"></p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button type="click-here-button" class="btn-2 btn-car" onclick="window.history.back();">Back ⬅️</button>
+                            <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                        </div>
+                    </div>
+                </div>
+ <!----------------------------------------------------------------------------------------------------------------------------->
+                <!--car 10-->
+                <!-- Toyota Axio WXB -->
+                <div class="collection-car-item">
+                    <img src="vehiclepage-img/wedding/wedding-2.jpg" alt="img">
+                    <div class="car-info-container">
+                        
+                        <h2>Toyota Axio WXB</h2>
+                        <button class="btn-2 btn-car" onclick="openModal('modal-10')">
+                            <p>More</p>
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Transparent Sub Page (Modal) -->
+                <div class="modal" id="modal-10">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-10')">&times;</span>
+                        <h2 class="modal-heading">Toyota Axio WXB</h2>
+                        <div class="image-container">
+                            <img src="vehiclepage-img/wedding/wedding-2.jpg" alt="img">
+                            <br>
+                        </div>
+                        <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                        <div class="modal-points">
+                            <div class="modal-column-1">
+                            <p><strong>Location:</strong>   All island</p><br>
+                            <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                            <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                            <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                            <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                            <p><strong>Driver Option :</strong> With or without driver</p><br>
+                            </div>
+                            <div class="modal-column-2">
+                            <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                            
+                            <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                            <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                            <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                            <br>
+                            
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button class="btn-2 btn-car" onclick="window.location.href='vehicle.html'">Back ⬅️</button>
+                            <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+                <!--car 11 -->
+                <!-- Premio-->
+                <div class="collection-car-item">
+                    <img src="vehiclepage-img/wedding/wedding-3.jpg" alt="img">
+                    <div class="car-info-container">
+                        
+                        <h2>Premio</h2>
+                        <button class="btn-2 btn-car" onclick="openModal('modal-11')">
+                            <p>More</p>
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Transparent Sub Page (Modal) -->
+                <div class="modal" id="modal-11">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-11')">&times;</span>
+                        <h2 class="modal-heading">Premio</h2>
+                        <div class="image-container">
+                            <img src="vehiclepage-img/wedding/wedding-3.jpg" alt="img">
+                            <br>
+                        </div>
+                        <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                        <div class="modal-points">
+                            <div class="modal-column-1">
+                            <p><strong>Location:</strong>   All island</p><br>
+                            <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                            <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                            <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                            <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                            <p><strong>Driver Option :</strong> With or without driver</p><br>
+                            </div>
+                            <div class="modal-column-2">
+                            <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                            
+                            <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                            <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                            <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                            <br><br>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button class="btn-2 btn-car" onclick="window.location.href='vehicle.html'">Back ⬅️</button>
+                            <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                        </div>
+                    </div>
+                </div>
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+                <!--car 12 -->
+                <!-- CHR -->
+                <div class="collection-car-item">
+                    <img src="vehiclepage-img/wedding/wedding-4.jpg" alt="img">
+                    <div class="car-info-container">
+                       
+                        <h2>Toyota Camry</h2>
+                        <button class="btn-2 btn-car" onclick="openModal('modal-12')">
+                            <p>More</p>
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Transparent Sub Page (Modal) -->
+                <div class="modal" id="modal-12">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-12')">&times;</span>
+                        <h2 class="modal-heading">Toyota Camry</h2>
+                        <div class="image-container">
+                            <img src="vehiclepage-img/wedding/wedding-4.jpg" alt="img">
+                            <br>
+                        </div>
+                        <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                        <div class="modal-points">
+                            <div class="modal-column-1">
+                            <p><strong>Location:</strong>   All island</p><br>
+                            <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                            <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                            <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                            <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                            <p><strong>Driver Option :</strong> With or without driver</p><br>
+                            </div>
+                            <div class="modal-column-2">
+                            <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                            
+                            <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                            <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                            <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                            <br><br>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button class="btn-2 btn-car" onclick="window.location.href='vehicle.html'">Back ⬅️</button>
+                            <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-container">
+                    <!--car 13-->
+                    <!-- Jaguar 'XF' -->
+                    <div class="collection-car-item">
+                        <img src="vehiclepage-img/wedding/wedding-5.webp" alt="img">
+                        <div class="car-info-container">
+                            
+                            <h2>Jaguar 'XF'</h2>
+                            <button class="btn-2 btn-car" onclick="openModal('modal-13')">
+                                <p>More</p>
+                                <i class="fa-solid fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- Transparent Sub Page (Modal) -->
+                    <div class="modal" id="modal-13">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal-13')">&times;</span>
+                            <h2 class="modal-heading">Jaguar 'XF'</h2>
+                            <div class="image-container">
+                                <img src="vehiclepage-img/wedding/wedding-5.webp" alt="img">
+                                <br>
+                            </div>
+                            <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                            <div class="modal-points">
+                                <div class="modal-column-1">
+                                <p><strong>Location:</strong>   All island</p><br>
+                                <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                                <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                                <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                                <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                                <p><strong>Driver Option :</strong> With or without driver</p><br>
+                                </div>
+                                <div class="modal-column-2">
+                                <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                                
+                                <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                                <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                                <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                                <br><br>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button type="click-here-button" class="btn-2 btn-car" onclick="window.history.back();">Back ⬅️</button>
+                                <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                            </div>
+                        </div>
+                    </div>
+     <!----------------------------------------------------------------------------------------------------------------------------->
+                    <!--car 14-->
+                    <!-- audi-->
+                    <div class="collection-car-item">
+                        <img src="vehiclepage-img/wedding/wedding-6.jpg" alt="img">
+                        <div class="car-info-container">
+                            
+                            <h2>Audi</h2>
+                            <button class="btn-2 btn-car" onclick="openModal('modal-14')">
+                                <p>More</p>
+                                <i class="fa-solid fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- Transparent Sub Page (Modal) -->
+                    <div class="modal" id="modal-14">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal-14')">&times;</span>
+                            <h2 class="modal-heading">Audi</h2>
+                            <div class="image-container">
+                                <img src="vehiclepage-img/wedding/wedding-6.jpg" alt="img">
+                                <br>
+                            </div>
+                            <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                            <div class="modal-points">
+                                <div class="modal-column-1">
+                                <p><strong>Location:</strong>   All island</p><br>
+                                <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                                <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                                <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                                <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                                <p><strong>Driver Option :</strong> With or without driver</p><br>
+                                </div>
+                                <div class="modal-column-2">
+                                <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                                
+                                <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                                <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                                <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                                <br><br>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="btn-2 btn-car" onclick="window.location.href='vehicle.html'">Back ⬅️</button>
+                                <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+    
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    
+                    <!--car 15 -->
+                    <!-- CHR -->
+                    <div class="collection-car-item">
+                        <img src="vehiclepage-img/wedding/wedding-7.jpg" alt="img">
+                        <div class="car-info-container">
+                            
+                            <h2>CHR</h2>
+                            <button class="btn-2 btn-car" onclick="openModal('modal-15')">
+                                <p>More</p>
+                                <i class="fa-solid fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- Transparent Sub Page (Modal) -->
+                    <div class="modal" id="modal-15">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal-15')">&times;</span>
+                            <h2 class="modal-heading">CHR</h2>
+                            <div class="image-container">
+                                <img src="vehiclepage-img/wedding/wedding-7.jpg" alt="img">
+                                <br>
+                            </div>
+                            <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                            <div class="modal-points">
+                                <div class="modal-column-1">
+                                <p><strong>Location:</strong>   All island</p><br>
+                                <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                                <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                                <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                                <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                                <p><strong>Driver Option :</strong> With or without driver</p><br>
+                                </div>
+                                <div class="modal-column-2">
+                                <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                                
+                                <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                                <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                                <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                                <br><br>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="btn-2 btn-car" onclick="window.location.href='vehicle.html'">Back ⬅️</button>
+                                <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                            </div>
+                        </div>
+                    </div>
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    
+                    <!--car 16 -->
+                    <!-- Civic -->
+                    <div class="collection-car-item">
+                        <img src="vehiclepage-img/wedding/wedding-8.jpg" alt="img">
+                        <div class="car-info-container">
+                           
+                            <h2>Civic</h2>
+                            <button class="btn-2 btn-car" onclick="openModal('modal-16')">
+                                <p>More</p>
+                                <i class="fa-solid fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- Transparent Sub Page (Modal) -->
+                    <div class="modal" id="modal-16">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal-16')">&times;</span>
+                            <h2 class="modal-heading">Civic</h2>
+                            <div class="image-container">
+                                <img src="vehiclepage-img/wedding/wedding-8.jpg" alt="img">
+                                <br>
+                            </div>
+                            <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                            <div class="modal-points">
+                                <div class="modal-column-1">
+                                <p><strong>Location:</strong>   All island</p><br>
+                                <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                                <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                                <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                                <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                                <p><strong>Driver Option :</strong> With or without driver</p><br>
+                                </div>
+                                <div class="modal-column-2">
+                                <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                                
+                                <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                                <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                                <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                                <br><br>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="btn-2 btn-car" onclick="window.location.href='vehicle.html'">Back ⬅️</button>
+                                <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-container">
+                        <!--car 17-->
+                        <!-- hummer -->
+                        <div class="collection-car-item">
+                            <img src="vehiclepage-img/wedding/wedding-9.jpg" alt="img">
+                            <div class="car-info-container">
+                                
+                                <h2>Hummer</h2>
+                                <button class="btn-2 btn-car" onclick="openModal('modal-17')">
+                                    <p>More</p>
+                                    <i class="fa-solid fa-phone"></i>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <!-- Transparent Sub Page (Modal) -->
+                        <div class="modal" id="modal-17">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal('modal-17')">&times;</span>
+                                <h2 class="modal-heading">Hummer</h2>
+                                <div class="image-container">
+                                    <img src="vehiclepage-img/wedding/wedding-9.jpg" alt="img">
+                                    <br>
+                                </div>
+                                <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                                <div class="modal-points">
+                                    <div class="modal-column-1">
+                                    <p><strong>Location:</strong>   All island</p><br>
+                                    <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                                    <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                                    <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                                    <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                                    <p><strong>Driver Option :</strong> With or without driver</p><br>
+                                    </div>
+                                    <div class="modal-column-2">
+                                    <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                                    
+                                    <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                                    <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                                    <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                                    <br><br>
+                                    </div>
+                                </div>
+                                <div class="button-group">
+                                    <button type="click-here-button" class="btn-2 btn-car" onclick="window.history.back();">Back ⬅️</button>
+                                    <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                                </div>
+                            </div>
+                        </div>
+         <!----------------------------------------------------------------------------------------------------------------------------->
+                        <!--car 18-->
+                        <!-- Defender -->
+                        <div class="collection-car-item">
+                            <img src="vehiclepage-img/wedding/wedding-10.jpg" alt="img">
+                            <div class="car-info-container">
+                                
+                                <h2>Defender</h2>
+                                <button class="btn-2 btn-car" onclick="openModal('modal-18')">
+                                    <p>More</p>
+                                    <i class="fa-solid fa-phone"></i>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <!-- Transparent Sub Page (Modal) -->
+                        <div class="modal" id="modal-18">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal('modal-18')">&times;</span>
+                                <h2 class="modal-heading">Defender</h2>
+                                <div class="image-container">
+                                    <img src="vehiclepage-img/wedding/wedding-10.jpg" alt="img">
+                                    <br>
+                                </div>
+                                <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                                <div class="modal-points">
+                                    <div class="modal-column-1">
+                                    <p><strong>Location:</strong>   All island</p><br>
+                                    <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                                    <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                                    <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                                    <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                                    <p><strong>Driver Option :</strong> With or without driver</p><br>
+                                    </div>
+                                    <div class="modal-column-2">
+                                    <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                                    
+                                    <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                                    <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                                    <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                                    <br><br>
+                                    </div>
+                                </div>
+                                <div class="button-group">
+                                    <button class="btn-2 btn-car" onclick="window.location.href='vehicle.html'">Back ⬅️</button>
+                                    <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+        
+        
+        <!----------------------------------------------------------------------------------------------------------------------------->
+        
+                        <!--car 19 -->
+                        <!-- Toyota Prado Limousine -->
+                        <div class="collection-car-item">
+                            <img src="vehiclepage-img/wedding/wedding-11.jpg" alt="img">
+                            <div class="car-info-container">
+                                
+                                <h2>Toyota Prado Limousine</h2>
+                                <button class="btn-2 btn-car" onclick="openModal('modal-19')">
+                                    <p>More</p>
+                                    <i class="fa-solid fa-phone"></i>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <!-- Transparent Sub Page (Modal) -->
+                        <div class="modal" id="modal-19">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal('modal-19')">&times;</span>
+                                <h2 class="modal-heading">Toyota Prado Limousine</h2>
+                                <div class="image-container">
+                                    <img src="vehiclepage-img/wedding/wedding-11.jpg" alt="img">
+                                    <br>
+                                </div>
+                                <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                                <div class="modal-points">
+                                    <div class="modal-column-1">
+                                    <p><strong>Location:</strong>   All island</p><br>
+                                    <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                                    <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                                    <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                                    <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                                    <p><strong>Driver Option :</strong> With or without driver</p><br>
+                                    </div>
+                                    <div class="modal-column-2">
+                                    <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                                    
+                                    <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                                    <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                                    <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                                    <br><br>
+                                    </div>
+                                </div>
+                                <div class="button-group">
+                                    <button class="btn-2 btn-car" onclick="window.location.href='vehicle.html'">Back ⬅️</button>
+                                    <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                                </div>
+                            </div>
+                        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------->
+        
+                        <!--car 20-->
+                        <!-- clasic car -->
+                        <div class="collection-car-item">
+                            <img src="vehiclepage-img/wedding/wedding-12.jpg" alt="img">
+                            <div class="car-info-container">
+                               
+                                <h2>Clasic Car</h2>
+                                <button class="btn-2 btn-car" onclick="openModal('modal-20')">
+                                    <p>More</p>
+                                    <i class="fa-solid fa-phone"></i>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <!-- Transparent Sub Page (Modal) -->
+                        <div class="modal" id="modal-20">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal('modal-20')">&times;</span>
+                                <h2 class="modal-heading">Clasic Car</h2>
+                                <div class="image-container">
+                                    <img src="vehiclepage-img/wedding/wedding-12.jpg" alt="img">
+                                    <br>
+                                </div>
+                                <p class="modal-description">This is a luxury hybrid sports car with cutting-edge technology.</p><br>
+                                <div class="modal-points">
+                                    <div class="modal-column-1">
+                                    <p><strong>Location:</strong>   All island</p><br>
+                                    <p><strong>Rental Price:</strong>   LKR  25 000 (per day) </p><br>
+                                    <p><strong>Transmission Type :</strong> Automatic / Manual</p><br>
+                                    <p><strong>Engine Capacity :</strong>   (optional)</p><br>
+                                    <p><strong>Passenger Capacity :</strong>    4-seater, 7-seater</p><br>
+                                    <p><strong>Driver Option :</strong> With or without driver</p><br>
+                                    </div>
+                                    <div class="modal-column-2">
+                                    <p><strong>Booking Options :</strong>   Hourly / Daily / Weekly / Monthly</p><br>
+                                    
+                                    <p><strong>Payment Method :</strong>    Cash, Card, Online</p><br>
+                                    <p><strong>Special Features :</strong>  Sunroof, Bluetooth, GPS, Baby Seat</p><br>
+                                    <p><strong>Discount Offers :</strong>   First-time user, long-term rental deals</p>
+                                    <br><br>
+                                    </div>
+                                </div>
+                                <div class="button-group">
+                                    <button class="btn-2 btn-car" onclick="window.location.href='vehicle.html'">Back ⬅️</button>
+                                    <button class="btn-2 btn-car " onclick="window.location.href='book.html'">Book Now 📞</button>
+                                </div>
+                            </div>
+                        </div>
+        
+        </section>
+
+        <!--footer-->
+        
+        <footer class="footer">
+
+            <div class="callout">
+                
+                <h2>Let's drive with Metro<b class="black">Ride</b> Today!</h2>
+                <p class="callout-description">
+                    Need assistance or redy to reserve your wheels? Contect us now for 
+                    prompt service and effortless booking!
+                </p>
+                <div class="callout-buttons">
+                    <button class="btn-2 btn-callout" onclick="window.location.href='vehicle.html'">
+                        <p>Check Our cars</p>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+
+                    <button class="btn-2 btn-callout btn-callout-black" onclick="window.location.href='book.html'">
+                        <p>Book Now</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                
+                <a href="" class="footer-brand">Metro<b class="accent">Ride</b></a>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="vehicle.html">Vehicle</a>
+                    <a href="book.html">Booking</a>
+                    
+                <a href="about.html">About Us</a>
+            
+                    <a href="contact.html">Contact Us</a>
+                    <a href="login.html">Login</a>
+                  </div>
+                <div class="footer-contact">
+                    <p>Email: support@metroride.com</p>
+                    <p>Phone: +94 77 123 4567</p>
+                  </div>
+              
+                  <div class="footer-socials">
+                    <a href="#"><img src="homepage-img/footer-social.webp" alt="Facebook"></a>
+
+                  </div>
+                <div class="footer-copy">
+                    <p>&copy; 2025 MetroRide. All rights reserved.</p>
+                  </div>
+            </div>
+        </footer>
+        <!--footer end-->
+
+    </body>
+</html>
